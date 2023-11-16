@@ -1,2 +1,4 @@
 #ignore f5.txt
 f5.txt
+#ignore folder1
+folder1/*
