@@ -1,0 +1,39 @@
+mkdir devoir2
+cd devoir2
+touch f1.txt
+touch f2.txt
+touch f3.txt
+git add .
+git commit -m "add files v0.1"
+rm f1.txt
+git rm f2.txt
+touch f4.txt
+touch f5.txt
+touch .gitignore
+nano .gitignore
+git add .gitignore
+git commit -m "v0.2 added gitignore"
+git status
+git add f4.txt
+git commit -m "v0.3 added f4.txt"
+mkdir folder1
+cd folder1
+touch f1folder1.txt
+cd ..
+nano .gitignore
+git add .gitignore
+git commit -m "v0.4 ignore folder1"
+git status
+git branch test1
+git checkout test1
+touch f6.txt
+git add f6.txt
+git commit -m "test1 v0.41"
+git status
+git checkout master
+touch f7.txt
+git add f7.txt
+git commit -m "v0.5 added f7.txt"
+git merge test1
+git remote add origin https://github.com/florian-lemesle/devoir2.git
+git push origin master
